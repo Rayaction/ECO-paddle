@@ -1,0 +1,1204 @@
+首次部分head截取：
+{'MODEL': {'name': 'TSN', 'format': 'pkl', 'num_classes': 101, 'seg_num': 16, 'seglen': 1, 'image_mean': [0.485, 0.456, 0.406], 'image_std': [0.229, 0.224, 0.225], 'num_layers': 50}, 'TRAIN': {'epoch': 20, 'short_size': 240, 'target_size': 224, 'num_reader_threads': 1, 'buf_size': 1024, 'batch_size': 16, 'use_gpu': True, 'num_gpus': 0, 'filelist': 'data/train_01.list', 'learning_rate': 0.001, 'learning_rate_decay': 0.1, 'l2_weight_decay': 0.0001, 'momentum': 0.9, 'total_videos': 80}, 'VALID': {'short_size': 240, 'target_size': 224, 'num_reader_threads': 1, 'buf_size': 1024, 'batch_size': 10, 'filelist': './data/test_01.list'}, 'TEST': {'seg_num': 24, 'short_size': 240, 'target_size': 224, 'num_reader_threads': 1, 'buf_size': 1024, 'batch_size': 10, 'filelist': './data/test_01.list'}, 'INFER': {'short_size': 240, 'target_size': 224, 'num_reader_threads': 1, 'buf_size': 1024, 'batch_size': 1, 'filelist': './data/test_01.list'}}
+{'MODEL': {'name': 'TSN', 'format': 'pkl', 'num_classes': 101, 'seg_num': 16, 'seglen': 1, 'image_mean': [0.485, 0.456, 0.406], 'image_std': [0.229, 0.224, 0.225], 'num_layers': 50}, 'TRAIN': {'epoch': 40, 'short_size': 240, 'target_size': 224, 'num_reader_threads': 1, 'buf_size': 1024, 'batch_size': 16, 'use_gpu': True, 'num_gpus': 0, 'filelist': 'data/train_01.list', 'learning_rate': 0.001, 'learning_rate_decay': 0.1, 'l2_weight_decay': 0.0001, 'momentum': 0.9, 'total_videos': 80}, 'VALID': {'short_size': 240, 'target_size': 224, 'num_reader_threads': 1, 'buf_size': 1024, 'batch_size': 10, 'filelist': './data/test_01.list'}, 'TEST': {'seg_num': 24, 'short_size': 240, 'target_size': 224, 'num_reader_threads': 1, 'buf_size': 1024, 'batch_size': 10, 'filelist': './data/test_01.list'}, 'INFER': {'short_size': 240, 'target_size': 224, 'num_reader_threads': 1, 'buf_size': 1024, 'batch_size': 1, 'filelist': './data/test_01.list'}}
+W0905 19:06:23.921372 10651 device_context.cc:252] Please NOTE: device: 0, CUDA Capability: 70, Driver API Version: 9.2, Runtime API Version: 9.0
+W0905 19:06:23.925320 10651 device_context.cc:260] device: 0, cuDNN Version: 7.3.
+clip: Gradient Clip By GlobalNorm, global_norm=50.000000
+get_optim_policies:--batch_norm_0.w_0 {'learning_rate': 1} False
+get_optim_policies:--batch_norm_0.b_0 {'learning_rate': 2} False
+train_reader <function KineticsReader.create_reader.<locals>._batch_reader at 0x7f4b096589e0>
+lr: 0.001
+
+中段训练：
+lr: 1e-04
+Loss at epoch 21 step 0: [0.00226682], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 1: [0.00063814], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 2: [0.00092659], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 3: [0.00022726], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 4: [0.0034516], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 5: [0.00029837], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 6: [0.00400936], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 7: [0.00311785], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 8: [0.00792217], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 9: [0.00246916], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 10: [0.00149203], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 11: [0.00355857], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 12: [0.00054255], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 13: [0.00066816], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 14: [0.00113306], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 15: [0.00155123], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 16: [0.00108149], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 17: [0.00057146], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 18: [0.00230475], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 19: [8.736008e-05], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 20: [0.00017293], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 21: [0.00029529], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 22: [0.00040739], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 23: [0.0021228], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 24: [0.00182328], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 25: [0.00017647], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 26: [0.00068146], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 27: [0.00422497], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 28: [0.00620552], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 29: [0.00454749], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 30: [0.00045873], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 31: [0.0024755], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 32: [0.00041661], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 33: [0.00951058], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 34: [0.00044645], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 35: [0.00016996], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 36: [0.00044473], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 37: [0.00049719], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 38: [0.0011925], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 39: [0.00028795], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 40: [0.00078172], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 41: [0.00117566], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 42: [0.00109398], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 43: [0.00387085], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 44: [0.00120667], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 45: [0.0002824], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 46: [0.0010655], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 47: [0.0003452], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 48: [0.00015168], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 49: [0.00208786], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 50: [0.00261688], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 51: [0.00288299], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 52: [0.00039031], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 53: [0.00075462], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 54: [0.00091531], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 55: [0.00091713], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 56: [0.00057705], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 57: [0.0037637], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 58: [0.00053057], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 59: [0.00036075], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 60: [0.00033843], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 61: [0.00082391], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 62: [0.00075216], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 63: [0.00065787], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 64: [0.00028279], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 65: [0.00060947], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 66: [0.00072775], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 67: [0.00142606], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 68: [0.00178074], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 69: [0.00014127], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 70: [0.00201729], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 71: [0.00055494], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 72: [0.00089551], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 73: [0.00022219], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 74: [0.00069038], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 75: [0.00035986], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 76: [0.00060693], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 77: [0.00453482], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 78: [0.00097536], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 79: [0.00045505], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 80: [0.00109744], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 81: [0.00041714], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 82: [0.00216277], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 83: [0.00023087], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 84: [0.00019434], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 85: [0.02673606], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 86: [0.00144685], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 87: [0.00071755], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 88: [0.00067107], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 89: [0.00317847], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 90: [0.01040246], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 91: [0.00165804], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 92: [0.00111173], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 93: [0.0340197], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 94: [0.00035589], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 95: [0.00138487], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 96: [0.00909716], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 97: [0.00136425], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 98: [0.00024396], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 99: [0.00083611], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 100: [0.00025578], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 101: [0.00264848], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 102: [0.00091799], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 103: [0.00058895], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 104: [0.00176505], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 105: [0.00151696], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 106: [0.00320495], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 107: [0.00181789], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 108: [0.00071544], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 109: [0.00027075], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 110: [0.00067579], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 111: [0.00069483], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 112: [0.00282947], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 113: [0.00163199], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 114: [0.00456402], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 115: [0.00028666], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 116: [0.00042038], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 117: [0.00064315], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 118: [0.00084078], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 119: [0.00492288], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 120: [0.00091817], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 121: [0.00115468], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 122: [0.00217603], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 123: [0.00158192], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 124: [0.00178933], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 125: [0.00047372], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 126: [0.00063119], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 127: [0.00132855], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 128: [0.00064642], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 129: [0.00040923], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 130: [0.00073512], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 131: [0.001023], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 132: [0.00169138], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 133: [0.0011303], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 134: [0.00252328], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 135: [0.00035692], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 136: [0.00104859], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 137: [0.00033318], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 138: [0.00068621], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 139: [0.00146304], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 140: [0.00231747], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 141: [0.00091486], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 142: [0.00047921], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 143: [0.00114261], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 144: [0.00074077], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 145: [0.00075286], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 146: [0.00051657], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 147: [0.00017903], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 148: [0.00065784], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 149: [0.00044462], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 150: [0.00043056], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 151: [0.02268802], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 152: [0.00121812], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 153: [0.004734], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 154: [0.00105005], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 155: [0.00015423], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 156: [0.00155429], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 157: [0.0016692], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 158: [0.00166102], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 159: [0.00117993], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 160: [0.00324073], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 161: [0.00362061], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 162: [0.00069119], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 163: [0.00035855], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 164: [0.00067971], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 165: [0.00141299], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 166: [0.0008497], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 167: [0.00056267], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 168: [0.00027533], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 169: [0.00046692], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 170: [0.00583769], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 171: [0.00174276], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 172: [0.00060136], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 173: [0.00132853], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 174: [0.00901644], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 175: [0.00085914], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 176: [0.00082917], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 177: [0.00123092], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 178: [0.00277927], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 179: [0.00054681], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 180: [0.00505344], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 181: [0.00152122], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 182: [0.000435], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 183: [0.00053415], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 184: [0.00047903], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 185: [0.00119466], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 186: [0.00058654], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 187: [0.00066266], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 188: [0.00156718], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 189: [0.00057993], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 190: [0.00065629], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 191: [0.00232604], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 192: [0.00046048], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 193: [0.00360032], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 194: [0.00058269], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 195: [0.00085164], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 196: [0.00068882], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 197: [0.00076843], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 198: [0.00097779], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 199: [0.00088881], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 200: [0.00037728], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 201: [0.0172153], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 202: [0.00689633], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 203: [0.0015382], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 204: [0.01233035], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 205: [0.00033411], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 206: [0.00082471], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 207: [0.00066075], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 208: [0.00095798], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 209: [0.00024296], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 210: [0.00215937], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 211: [0.00044903], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 212: [0.00085424], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 213: [0.00325803], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 214: [0.0035363], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 215: [0.00226262], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 216: [0.00088], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 217: [0.00059316], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 218: [0.00656084], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 219: [0.00270132], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 220: [0.0011977], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 221: [0.04385971], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 222: [0.00173841], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 223: [0.00029479], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 224: [0.00105448], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 225: [0.00155673], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 226: [0.00091911], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 227: [0.00415188], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 228: [0.00012897], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 229: [0.0021937], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 230: [0.00039265], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 231: [0.00135401], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 232: [0.00067139], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 233: [0.0005146], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 234: [0.00127497], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 235: [0.00069638], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 236: [0.00094443], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 237: [0.00091454], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 238: [0.00081262], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 239: [0.00029458], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 240: [0.00028548], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 241: [0.00413922], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 242: [0.00098685], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 243: [0.00344349], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 244: [0.01538009], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 245: [0.00254711], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 246: [0.00027028], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 247: [0.00189127], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 248: [0.00024776], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 249: [0.0017024], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 250: [0.00084851], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 251: [0.00179443], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 252: [0.00041483], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 253: [0.00102658], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 254: [0.01244221], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 255: [0.00093995], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 256: [0.00551908], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 257: [0.00028979], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 258: [0.00103796], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 259: [0.00043625], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 260: [0.00156129], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 261: [0.0031844], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 262: [0.00064101], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 263: [0.0005285], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 264: [0.00432575], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 265: [0.00025485], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 266: [0.00451624], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 267: [0.00060963], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 268: [0.00104935], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 269: [0.00037701], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 270: [0.00284416], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 271: [0.0005925], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 272: [0.00029279], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 273: [0.00035549], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 274: [0.00176042], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 275: [0.0062752], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 276: [0.00294757], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 277: [0.00123639], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 278: [0.00138454], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 279: [0.00097431], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 280: [0.00021778], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 281: [0.00117555], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 282: [0.0003653], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 283: [0.00042092], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 284: [0.0006435], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 285: [0.00181434], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 286: [0.00613812], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 287: [0.00048666], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 288: [0.00055624], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 289: [0.00032041], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 290: [0.00405605], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 291: [0.00444763], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 292: [0.00059196], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 293: [0.00142529], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 294: [0.00233779], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 295: [0.00060909], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 296: [0.00797285], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 297: [0.00054582], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 298: [9.754204e-05], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 299: [0.0015522], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 300: [0.00017631], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 301: [9.7638695e-05], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 302: [0.00094462], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 303: [0.00866652], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 304: [0.00085423], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 305: [0.00084192], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 306: [0.00182087], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 307: [0.00189065], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 308: [0.00056678], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 309: [0.00052351], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 310: [0.00162561], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 311: [0.00028728], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 312: [0.00401996], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 313: [0.00039838], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 314: [0.00088568], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 315: [0.00036733], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 316: [0.00087784], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 317: [0.00037023], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 318: [0.00071424], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 319: [0.00303943], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 320: [0.00181009], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 321: [0.00019281], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 322: [0.00103696], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 323: [0.00288816], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 324: [0.00077611], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 325: [0.00157817], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 326: [0.00112952], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 327: [0.00050321], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 328: [0.00143035], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 329: [0.00104089], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 330: [0.00014107], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 331: [0.00063312], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 332: [0.0005582], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 333: [0.00028778], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 334: [0.00146015], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 335: [0.00053746], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 336: [0.01620025], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 337: [0.00033246], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 338: [0.00208364], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 339: [0.00050593], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 340: [0.00116822], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 341: [0.00093819], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 342: [0.00323793], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 343: [0.00080312], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 344: [0.00047771], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 345: [0.00061255], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 346: [0.0002809], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 347: [0.00041316], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 348: [0.00046109], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 349: [0.00098463], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 350: [0.00020184], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 351: [0.00027365], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 352: [0.00025471], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 353: [0.00075222], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 354: [0.00165555], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 355: [0.00177934], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 356: [0.00473093], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 357: [0.00109778], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 358: [0.00065543], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 359: [0.00103704], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 360: [0.00057961], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 361: [0.00046917], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 362: [0.00404841], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 363: [0.00018044], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 364: [0.00134103], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 365: [0.00094552], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 366: [0.00060445], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 367: [0.00014415], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 368: [0.00048404], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 369: [0.00033117], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 370: [0.0013683], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 371: [0.00262494], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 372: [0.00117048], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 373: [0.0007814], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 374: [0.00082603], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 375: [0.00115669], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 376: [0.0027498], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 377: [0.00070324], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 378: [0.00140218], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 379: [0.00396544], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 380: [0.00228346], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 381: [0.00033898], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 382: [0.00051939], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 383: [0.00072378], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 384: [0.00157384], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 385: [0.00054512], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 386: [0.00178665], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 387: [0.00066142], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 388: [0.00021033], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 389: [0.00142412], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 390: [0.00065476], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 391: [0.00024173], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 392: [0.00107981], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 393: [0.00022768], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 394: [0.00112713], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 395: [0.00135441], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 396: [0.00073627], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 397: [0.00021383], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 398: [0.00200881], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 399: [0.00254574], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 400: [0.00177987], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 401: [0.00050701], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 402: [0.00082139], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 403: [0.00053677], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 404: [0.00069256], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 405: [0.00258104], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 406: [0.00041494], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 407: [0.00111179], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 408: [0.00307178], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 409: [0.00151156], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 410: [0.00038309], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 411: [0.00066044], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 412: [0.00083985], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 413: [0.00167966], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 414: [0.00181079], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 415: [0.0017085], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 416: [0.00037875], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 417: [0.00860044], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 418: [0.00058529], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 419: [0.00167473], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 420: [0.00062079], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 421: [0.00081661], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 422: [0.00097388], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 423: [0.00081768], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 424: [0.00054237], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 425: [0.00044914], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 426: [0.00119453], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 427: [0.00015511], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 428: [0.00019987], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 429: [0.01111336], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 430: [0.00219536], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 431: [0.00065979], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 432: [0.00073277], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 433: [0.00021888], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 434: [0.00059837], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 435: [0.00022073], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 436: [0.00174716], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 437: [0.00094395], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 438: [0.00018956], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 439: [0.00374086], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 440: [0.00084031], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 441: [0.00124313], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 442: [0.00264378], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 443: [0.00423432], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 444: [0.00013097], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 445: [0.00117738], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 446: [0.00112881], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 447: [0.00166922], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 448: [0.00133884], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 449: [0.00266187], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 450: [0.00079481], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 451: [0.00123111], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 452: [0.00072234], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 453: [0.00624303], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 454: [0.0006138], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 455: [0.00152031], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 456: [0.00171477], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 457: [0.00097495], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 458: [0.00042915], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 459: [0.00022339], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 460: [0.02903452], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 461: [0.0005135], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 462: [0.00282616], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 463: [0.00083425], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 464: [0.00075603], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 465: [0.01171489], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 466: [0.00297276], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 467: [0.00064914], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 468: [0.00315482], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 469: [0.00017737], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 470: [0.00047842], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 471: [0.00054808], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 472: [0.00136987], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 473: [0.00078052], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 474: [0.00359202], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 475: [0.0012487], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 476: [0.00060096], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 477: [0.00054078], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 478: [0.00074872], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 479: [0.00116485], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 480: [0.00049783], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 481: [0.00228621], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 482: [0.00059164], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 483: [0.0005963], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 484: [0.00184281], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 485: [0.00082225], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 486: [0.00169059], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 487: [0.00110079], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 488: [0.00024542], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 489: [0.00087842], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 490: [0.00122601], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 491: [0.00321032], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 492: [0.00038957], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 493: [9.8427845e-05], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 494: [0.00044708], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 495: [0.00248715], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 496: [0.00088348], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 497: [0.00023793], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 498: [0.0007018], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 499: [0.00037735], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 500: [0.0053525], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 501: [0.00108043], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 502: [0.00020902], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 503: [0.00034997], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 504: [0.00039973], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 505: [0.0025086], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 506: [0.00050661], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 507: [0.00047769], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 508: [0.00059597], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 509: [0.00056333], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 510: [0.00062976], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 511: [0.0013389], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 512: [0.00040102], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 513: [0.0013652], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 514: [0.00069692], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 515: [0.00042737], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 516: [0.00068697], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 517: [0.00081242], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 518: [0.00036452], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 519: [0.00076569], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 520: [0.000752], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 521: [0.00119994], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 522: [0.00134394], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 523: [0.00037837], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 524: [0.00032512], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 525: [0.00021058], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 526: [0.00034907], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 527: [0.00037007], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 528: [0.00076074], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 529: [0.0015029], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 530: [0.00028079], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 531: [0.00056621], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 532: [0.0025598], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 533: [0.0184103], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 534: [0.00093695], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 535: [0.00139049], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 536: [0.0007898], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 537: [0.0007162], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 538: [0.00052333], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 539: [0.00130424], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 540: [0.00131079], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 541: [0.00041633], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 542: [0.00083193], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 543: [0.00066231], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 544: [0.00073791], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 545: [0.0032256], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 546: [0.00054827], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 547: [0.00352105], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 548: [0.00358027], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 549: [0.00029958], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 550: [0.00051241], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 551: [0.00204091], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 552: [0.00013809], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 553: [0.00171978], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 554: [0.00022724], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 555: [0.00016538], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 556: [0.00135804], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 557: [0.00048775], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 558: [0.00132494], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 559: [0.000996], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 560: [0.00018652], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 561: [0.00042644], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 562: [0.00114696], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 563: [0.00027457], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 564: [0.00281465], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 565: [0.00518413], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 566: [0.00117845], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 567: [0.00029703], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 568: [0.00102839], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 569: [0.00548849], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 570: [0.00090503], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 571: [0.00106518], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 572: [0.00129982], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 573: [0.00216938], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 574: [0.00024742], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 575: [0.00079708], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 576: [0.00065997], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 577: [0.00049926], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 578: [0.01062283], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 579: [0.00075245], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 580: [0.00038657], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 581: [0.00055509], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 582: [0.00207853], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 583: [0.00060196], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 584: [0.00181799], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 585: [0.00219764], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 586: [0.00308072], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 587: [0.00038545], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 588: [0.00067447], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 589: [0.00055494], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 590: [0.00036019], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 591: [0.004283], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 592: [0.00025771], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 593: [0.00030107], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 594: [0.00572979], acc: [1.]
+lr: 1e-04
+Loss at epoch 21 step 595: [0.000135], acc: [1.]
